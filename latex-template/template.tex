@@ -1,0 +1,97 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+% packages
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{hyperref}
+\hypersetup{colorlinks = true, allcolors = blue, breaklinks = true}
+\usepackage{lscape}
+\usepackage[shortlabels]{enumitem}
+\usepackage{xparse}
+
+% bibliography
+\usepackage{natbib}
+\bibliographystyle{econ-aea}
+
+% tables and figures
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{adjustbox}
+\usepackage{subcaption}
+\captionsetup*[subfigure]{format=plain, font={footnotesize, bf}}
+
+% Fix \input with tables
+\makeatletter
+\let\input\@@input
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Report}
+\author{First Last \\ \emph{University of Arkansas}}
+\date{June 2025}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\begin{abstract}
+  Abstract...
+\end{abstract}
+\newpage
+
+
+\section{Report}
+
+Figure \ref{fig:short_description} shows the association between X and Y.
+
+\begin{figure}[htb!]
+  \caption{Descriptive Title}
+  \label{fig:short_description}
+
+  % Uncomment this line
+  % \includegraphics[width = \textwidth]{figures/_.pdf}
+\end{figure}
+
+
+
+Here is an irrelevant citation, \citet{gentzkow2014code}.
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage~\bibliography{references.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage~\appendix
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\renewcommand{\thetable}{\thesection\arabic{table}}
+\renewcommand{\thefigure}{\thesection\arabic{figure}}
+
+% Equations
+\numberwithin{equation}{section}
+\setcounter{equation}{0}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Additional Figures}
+
+\begin{figure}[htb!]
+  \caption{Appendix Figure}
+  \label{fig:appendix_1}
+
+  % Uncomment this line
+  % \includegraphics[width = \textwidth]{figures/_.pdf}
+\end{figure}
+
+
+
+
+\end{document}

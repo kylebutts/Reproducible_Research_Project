@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{lecture_notes}
+\usepackage{math}
+\begin{document}
+
+\begin{center}
+  {\Huge\bf Project Management Assignment}
+
+  \medskip
+  {\large Prof. Kyle Butts}
+\end{center}
+
+This assignment will take us through the basic steps of working on a project.
+We will go through a complete project workflow (albeit a quite simple project).
+We will go from raw data /Users/kbutts/Downloads/Large Cars Dataset.csv´to a final paper in a way that is reproducible.
+
+\bigskip
+\begin{enumerate}
+  \item Create a basic project folder structure. Include the following folders \texttt{code/}, \texttt{data/raw/}, \texttt{data/base/}, \texttt{out/}, \texttt{out/figures}, and \texttt{out/tables}.
+  
+  \bigskip
+  \item First we will download a raw dataset. To do this, let's download this dataset of cars: \url{https://www.kaggle.com/datasets/makslypko/large-cars-dataset}.
+  \begin{itemize}
+    \item Download the data and put into your \texttt{data/raw/} folder (perhaps in a subfolder).
+    
+    \item Add a \texttt{README.md} or \texttt{README.txt} file that marks where you downloaded the file from and make the date you downloaded it. 
+    
+    \item Make sure to save the data dictionary for easy reference. I added this to my \texttt{README} document.
+  \end{itemize}
+
+  \bigskip
+  \item Create a new script that loads the cars dataset, cleans variable names (if desired), and then export to \texttt{data/base/} (perhaps create a subfolder).
+  
+  \bigskip
+  \item Create a new script to do a basic data analysis. Load the data, create a basic scatterplot with two variables of your choice, and export the figure in to \texttt{out/figures/}. Give the exported file a high-quality name. 
+  
+  \bigskip
+  \item Last, create a latex document in your \texttt{out/} folder. If you have never used latex, that is okay! Start with \texttt{template.tex} which is a basic template for your future use. All you need to change is the figures to use your exported figures.
+\end{enumerate}
+
+
+
+\end{document}
