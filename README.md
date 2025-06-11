@@ -8,7 +8,7 @@ Students need the following software installed:
 - [LaTeX](https://www.latex-project.org/get/) for writing papers (I suppose you can use Word, but..)
 - A code editor:
   - [VSCode](https://code.visualstudio.com/) is a great all around IDE
-    - Good for editing R and latex in one software. Install these extensions for [Latex](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r), [R](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r), and [Stata](https://marketplace.visualstudio.com/items?itemName=kylebutts.vscode-stata)
+    - Good for editing R and latex in one software. Install these extensions for [Latex](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), [R](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r), and [Stata](https://marketplace.visualstudio.com/items?itemName=kylebutts.vscode-stata)
   - [RStudio](https://posit.co/download/rstudio-desktop/) is the standard for R and can do latex as well
   - If you are a stata only user, then you can get by with Stata + [Overleaf](https://www.overleaf.com/) (an online latex editor)
 
@@ -31,12 +31,13 @@ Please install this software and try and compile `template.tex` from this reposi
 ## Example repositories to look at (in class)
 - https://github.com/kylebutts/Generalized-Imputation-Estimator/
 - https://github.com/jaworskit/urban-wage-premium/
+- https://github.com/grantmcdermott/blueparadox/
+- https://github.com/grantmcdermott/skeptic-priors/tree/master
 - https://github.com/paulgp/bartik-weight/
-  - Pretty good! What do we think about the data folder? Anything that could be better?
 - https://github.com/scottcohn97/hansen2015_RDD_replication
 - https://github.com/zhentaoshi/Boosted_HP_filter/tree/master
 - https://github.com/reifjulian/driving
-  - Perhaps the blue ribbon winner?
+  - Perhaps the blue ribbon winner
 - https://github.com/borusyak/shift-share/
 - https://github.com/ojorda/Econometrics-Journal/
 - https://github.com/zhentaoshi/C-Lasso/
